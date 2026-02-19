@@ -134,16 +134,17 @@ export function DashboardPage() {
               <span style={{ fontWeight: 800 }}>{nextText}</span>
             </div>
 
-            <div className="card-actions">
-            <Link className="btn btn-primary" to={`/workstations/${ws.id}`} aria-label={`Reserve ${ws.name}`}>
-              Reserve
-            </Link>
-
-            <Link className="btn" to={`/workstations/${ws.id}`} aria-label={`View calendar for ${ws.name}`}>
+            <div className="card-actions" style={{ justifyContent: 'flex-end' }}>
+            <Link
+              className="btn btn-primary"
+              to={`/workstations/${ws.id}`}
+              aria-label={`Calendar ${ws.name}`}
+              onMouseEnter={e => (e.currentTarget.style.background = '#04459d')}
+              onMouseLeave={e => (e.currentTarget.style.background = '')}
+            >
               Calendar
             </Link>
           </div>
-
           </div>
         ))}
       </section>

@@ -13,7 +13,7 @@ export function Header() {
     <header className="header" role="banner">
       <div className="header-inner">
         <Link className="brand" to="/" aria-label="Go to dashboard">
-          <img className="brand-logo" src="/logo.svg" alt="Logo" />
+          <img className="brand-logo" src="./logo.svg" alt="Logo" />
           <div className="brand-title">
             <div className="title">Workstation Reservations</div>
             <div className="subtitle">{subtitle}</div>
